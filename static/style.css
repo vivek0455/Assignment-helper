@@ -1,0 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+/* Navigation bar CSS */
+.custom-navbar{
+    background-color: #5ebad8;
+    border-bottom: 7px solid rgb(235, 177, 157);
+}
+.custom-navbar .navbar-nav .nav-link {
+    display: inline-block;
+    color: white;
+    margin: 15px;
+    font-size:18px;
+    font-family: 500;
+    cursor: pointer;
+    z-index: 2;
+    position: relative;
+    transition: color .3s;
+}
+.custom-navbar .navbar-nav .nav-link::after{
+    content:'';
+    width: 100%;
+    height: 100%;
+    background: rgb(232, 197, 69);
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top .5s , opacity .5s;
+    
+}
+.custom-navbar .navbar-nav .nav-link:hover{
+    color: rgb(255, 255, 255);
+    padding: 7px 20px 7px 20px;
+   
+} 
+.custom-navbar .navbar-nav .nav-link:hover::after{
+    top: 50%;
+    opacity: 1;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+.custom-navbar .navbar-nav .nav-link.active {
+
+    background-color: #70b173;
+    border-radius: 40px;
+    padding: 7px 20px 7px 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+} 
+.navbar-brand{
+    align-items: left;
+    background:url(/static/logo.png) no-repeat;
+    z-index: 1;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+/* Style for disply flex docs and google form */
+.Bigcontainer {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    margin: 20px;
+}
+
+.container1, .container2 {
+    flex: 1;
+    margin: 10px;
+}
+
+.container1 iframe, .container2 iframe {
+    width: 730px;
+    height: 700px;
+    border: none;
+}
+
+
+/* CSS for bot */
+.bot-link ,.doc-link{
+    text-decoration: none;
+    color: #fff;
+    margin: auto;
+}
+.buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    gap: 80px;
+}
+
+.end .content{
+    display: inline-table;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+    margin:210px 0px 15px 400px;
+}
+
+.end .content h3{
+    font-size: 54px;
+    color: white;
+  
+
+}
+
+.end .content p{
+    font-size: 20px;
+   color: white;
+    padding: 10px 0;
+    margin-bottom: 15px 0 0 0;
+    line-height: 1.5;
+}
+
+.end-btn{
+    padding: 15px 45px;
+    border-radius: 8px ;
+}
+
+
